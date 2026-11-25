@@ -1,11 +1,15 @@
 <!--
-  用法：内容并入业务仓 `.github/copilot-instructions.md`（若无则新建该文件）。
+  用法：并入业务仓 `.github/copilot-instructions.md`。
   路径改为引进 ai-agent-guidelines 后的实际相对路径。
 -->
 
-## Documentation writing
+## AI agent guidelines
 
-When creating or editing technical docs under `docs/**` (especially openings, scope, or one-pager sections):
+Library: `docs/ai-agent-guidelines/` (see its `README.md` index).
 
-- Follow `docs/ai-agent-guidelines/ai/tech-writing.md`
-- Obey its must / must-not rules and run the checklist before finishing
+- Always skim `docs/ai-agent-guidelines/ai/constitution.md`
+- Docs / openings → `docs/ai-agent-guidelines/ai/tech-writing.md`
+- Code → `docs/ai-agent-guidelines/ai/coding.md`
+- Known pitfalls → `docs/ai-agent-guidelines/ai/pitfalls/` (e.g. react-effect-tabs, i18n-csv-only)
+
+Load only the file for the current task; run that file's checklist before finishing.

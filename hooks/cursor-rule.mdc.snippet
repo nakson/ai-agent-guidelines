@@ -1,26 +1,27 @@
 ---
-description: 技术文档写法：开篇/范围按团队规范，正文见 ai-agent-guidelines
-globs: docs/**/*.md
+description: 按任务引用 ai-agent-guidelines（constitution / 文档 / 代码 / pitfalls）
+globs:
+  - docs/**/*.md
+  - "**/*.{js,jsx,ts,tsx,java}"
 alwaysApply: false
 ---
 
 <!--
-  用法：复制为业务仓 `.cursor/rules/tech-writing.mdc`（文件名可改）。
-  只保留触发条件 + 指针；勿把 tech-writing.md 全文贴进本文件。
-  路径改为引进 ai-agent-guidelines 后的实际相对路径。
-  本仓特例（产品分类举例等）可写在「本仓补充」小节，或另建短 md 再引用。
+  用法：复制为业务仓 `.cursor/rules/ai-agent-guidelines.mdc`。
+  可再拆成多条 mdc，用更窄 globs 分别指向 tech-writing / coding / 某坑。
+  路径改为引进后的相对路径。勿把专章全文贴进本文件。
 -->
 
-# 技术文档写法
+# AI Agent 指南（指针）
 
-完整规范：`docs/ai-agent-guidelines/ai/tech-writing.md`
+索引：`docs/ai-agent-guidelines/README.md`  
+底线：`docs/ai-agent-guidelines/ai/constitution.md`
 
-改 `docs/**/*.md` 的开篇、范围、一页纸类段落前：
+| 任务 | 读 |
+|------|-----|
+| 文档开篇 / 范围 | `docs/ai-agent-guidelines/ai/tech-writing.md` |
+| 写代码 | `docs/ai-agent-guidelines/ai/coding.md` |
+| Tabs / effect 回写 | `docs/ai-agent-guidelines/ai/pitfalls/react-effect-tabs.md` |
+| i18n 文案 | `docs/ai-agent-guidelines/ai/pitfalls/i18n-csv-only.md` |
 
-1. 读取上述文件
-2. 按其中必须 / 禁止执行
-3. 写完过自检清单
-
-## 本仓补充（可选）
-
-- （在此写产品特有分类或指向 `docs/ai/<product>-scope.md`）
+改前读对口文件；改完过该篇自检。
